@@ -1,6 +1,6 @@
 # How to Publish Research Software
 
-Notes based on the HIDA course ["Foundation of Research Software Publication"](https://events.hifis.net/event/1344/overview), on 2024/05/23 and /24.
+Notes based on the course ["Foundation of Research Software Publication"](https://events.hifis.net/event/1344/overview) by the [Helmholtz Information and Data Science Academy (HIDA)](https://www.helmholtz-hida.de/) on 2024/05/23 and /24.
 
 Original course material is available via [Git](https://codebase.helmholtz.cloud/hifis/software/education/hifis-workshops/foundations-of-research-software-publication/workshop-materials) and [HedgeDoc](https://notes.desy.de/rVHUTRVsTR2qVTiXjrDHCg?view).
 
@@ -67,7 +67,7 @@ First step (if relevant): Check organizational policies for publishing software 
 - Clearly state dependencies.
   - For Python:
     - Basic: Python version + `requirements.txt`
-    - Advanced: 
+    - Advanced:
       - `requirements.in` file and `pip-compile` command
       - Python setuptools
       - Make file
@@ -94,4 +94,40 @@ First step (if relevant): Check organizational policies for publishing software 
 
 ## 3. Add Essential Documentation
 
-- Mind your audience and create documentation occordingly.
+Mind your audience and create documentation occording to at least the following perspectives:
+
+- Users of the software/data
+- Contributors that can help improving the repository
+
+### Typical Documentation Files
+
+- `README.md` as entry point to the repository with the following information:
+  - Short description of the repository (What? Why?)
+  - Installation and configuration instructions
+  - Usage instructions
+  - Test instructions
+  - Project/code architecture details
+  - Link to changelog + eventually info about latest update
+  - Link to contribution guidelines
+  - Link to code of conduct
+  - Link to license
+  - Citation information
+- `CONTRIBUTING`
+- `CODE_OF_CONDUCT`
+- `LICENSE` file or `LICENSES` folder
+- `CHANGELOG`
+- `ISSUE_TEMPLATE` and `PULL_REQUEST_TEMPLATE` folders with issue and pull request template files
+
+### Typical Mark-up Languages
+
+- Markdown (see [Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/))
+- AsciiDoc (see [AsciiDoc Writer's Guide](https://asciidoctor.org/docs/asciidoc-writers-guide/))
+- ReStructuredText (see [ReStructuredText tutorial for Sphinx](https://quick-sphinx-tutorial.readthedocs.io/en/latest/rst.html))
+- Use [Pandoc](https://pandoc.org) to convert between the formats
+
+### Further Information About Open Source Documentation
+
+- GitHub's [Community Profile](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories)
+- GitHub's [Open Source Guide](https://opensource.guide)
+- Curated [Awesome README](https://github.com/matiassingers/awesome-readme) list
+- [One-sentence-per-line principle](https://rhodesmill.org/brandon/2012/one-sentence-per-line/)
