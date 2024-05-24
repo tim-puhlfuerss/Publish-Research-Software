@@ -20,4 +20,4 @@ Consider [this GitHub repo](https://codebase.helmholtz.cloud/hifis/software/educ
 ## Further Reads
 
 - [Open Research Software and Open Source guideline](https://github.com/OpenScienceMOOC/Module-5-Open-Research-Software-and-Open-Source/blob/master/content_development/MAIN.md) by the Open Science MOOC
-- (More specific further reads in each of the six steps above)
+- (More specific further reads in each page of the six steps above)
