@@ -113,7 +113,7 @@ Both essentially refer to the same set of licenses but favor different values (d
   Strong copyleft licenses (e.g., GPL) are quite strict and make it hard to "achieve" a combined work.
   - The usage mechanism (copying, static linking, dynamic linking)
 
-![](https://upload.wikimedia.org/wikipedia/commons/6/6b/Software-license-compatiblity-graph.svg)
+![Code considered as combined and derivative work](https://upload.wikimedia.org/wikipedia/commons/6/6b/Software-license-compatiblity-graph.svg)
 
 ## Minimal Checklist
 
