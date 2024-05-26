@@ -10,12 +10,12 @@ Ask for legal advice if you are unsure about licensing (e.g., a lawyer or your o
 - The copyright holder must state a license to grant others rights to (re-)use the software.
 - Check the compatibility of licences from third parties (libraries, data, etc.) from the very beginning.
 - Prefer using [official, permissive FOSS licenses](https://opensource.org/licenses/alphabetical).
-- Minimum: Add a license file and state the copyright holder.
-- Recommended: Follow the REUSE specification in version 3.
+- Minimum: Add a `LICENSE` file and state the copyright holder.
+- Recommended: Follow the [REUSE specification](https://reuse.software/specifications/).
 
 ## Why is This Process Important?
 
-- An explicitly stated software license is required to (re-)use your artifacts legally.
+- An explicitly stated software license is required to (re-)use the artifacts legally.
 
 ## Copyright
 
@@ -75,7 +75,7 @@ Both essentially refer to the same set of licenses but favor different values (d
 #### "Copyleft" Licenses
 
 - “The world is evil.”
-- Requires you to use the same or compatible license for your source code as soon as the distributed work is a derivative of the covered work.
+- Requires to use the same or compatible license for distributed derivative work.
 - Results in a "viral effect" as all distributed derivative code must also be publicly available.
 - The definition of a "derivative work" differs per license.
 - There are strong ("No exceptions!") and weak ("exceptions possible") copyleft licenses.
@@ -119,27 +119,36 @@ Both essentially refer to the same set of licenses but favor different values (d
 
 1. Choose a license.
 
+   - Decision depends on different factors, e.g.:
+     - Your publication strategy
+     - Restrictions from third-party dependencies (requires a list of dependencies, their version, their license, and the way you use them)
+     - Restrictions in the working group/organization
+     - Typically used licenses in your community of practice.
+   - Only use Open Source Initiative (OSI)-approved licenses for own code.
    - ["Choose a License"](https://choosealicense.com/) by GitHub helps to get started.
-   - Analyze / comply with licenses of third-party dependencies.
-   This requires a list of dependencies, their version, their license, the way you use them.
+   - Prefer permissive licenses because they make it easier to re-use code.
+     - Small works: MIT or BSD (3-clause, 2-clause) license. They are short and quite understandable.
+     - Larger works: Apache License 2.0. A bit more complicated but allows to practice __patent claims__ of contributors to the code.
   
-2. Ask your boss for permission.
+2. Ask your supervisor for permission.
 
    - Your organization holds the rights on software that you produce during your work ("Verwertungsrechte").
-   For that reason, your organization has to explicitly permit sharing the software under the selected license.
+   The organization must explicitly permit sharing the software under the selected license.
 
 3. Prepare your code:
 
    - Minimum: Add a `LICENSE` file that contains the license text and states the copyright holder.
    - Recommended:
-     - Make it easy to determine the license and copyright holders for each file.
-     - Document your third-party dependencies, including their licenses.
-     - Use and follow the [REUSE tool](https://reuse.software/tutorial/) to lint your project for and add missing licences automatically.
+     - Document the license and copyright holders for each file.
+     - Document third-party dependencies, including their licenses and the way they are used (e.g., statically linked, dynamically linked, run as command).
+     - Document this information in a `LICENSE` file and the license texts in a `LICENSE` folder.
+     - Add a brief "License" section to the `README` file summarizing the main license(s), indicating the copyright holder, and linking to the license-related files.
+     - Use and follow the [REUSE tool](https://reuse.software/tutorial/) to lint the project for missing licence statements and add them automatically.
 
 ## Further Reads
 
 - Open Source definition and approved licenses by the [_Open Source Initiative_](https://opensource.org)
 - [SPDX License List](https://spdx.org/licenses/) to download license texts
 - [Software Licenses in Plain English](https://www.tldrlegal.com) by _tl;drLegal_
-- [Free Software](https://www.gnu.org/philosophy/free-sw.html) definition by _GNU_
+- [Free Software definition](https://www.gnu.org/philosophy/free-sw.html) by _GNU_
 - [Paper](https://doi.org/10.1371/journal.pcbi.1002598) "A Quick Guide to Software Licensing for the Scientist-Programmer"
