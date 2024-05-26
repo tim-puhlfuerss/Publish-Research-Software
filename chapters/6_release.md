@@ -8,9 +8,9 @@
 
 ## Why is This Process Important?
 
-- Otherwise, users do not know which version is considered stable.
-- Otherwise, users do not know which version has been used to produce a specific result.
-- You are able to easier start investigating problems that a user had with your code.
+- Users receive information which version is considered stable.
+- Users get to know which version has been used to produce a specific result.
+- Users can report problems for a specific software version.
 
 ## Release Basics
 
@@ -33,24 +33,28 @@ Consider to [(semi-)automate updating the changelog](https://dev.to/devsatasurio
 
 ## Minimal Release Checklist for Research Code
 
-1. Before you start, make sure that you:
-   - Defined the release number scheme.
-   - Established the name mapping between release number and release tags.
-   - Defined how to handle citation metadata.
-   - Defined where you want to archive the code.
-   - Defined the format and content of the release packages.
+1. Before you start, make sure that you defined:
+
+   - Tthe release number scheme.
+   - The name mapping between release number and release tags.
+   - How to handle citation metadata.
+   - Where you want to archive the code.
+   - The format and content of the release packages.
 
 2. Prepare code for release
+
    - Define the release number for the release.
    - Document the user-visible changes in the changelog.
    - Update the citation metadata for this release.
 
-3. Check code
+3. Check the code
+
    - Make sure that the code fulfills its intended functionality in the environments for which the code should work.
    - It is recommended to automate some checks by using automated tests and linting.
    - Review the documentation.
 
 4. Publish and archive the release
+
    - Mark the release in the source code repository using a tag.
    This step ensures that one can easily identify the content of the released version in the source code repository.
    - Create the release package and eventually publish it on a code distribution platform.
