@@ -8,54 +8,47 @@
 
 ## Why is This Process Important?
 
-- Users receive information which version is considered stable.
-- Users get to know which version has been used to produce a specific result.
-- Users can report problems for a specific software version.
+- Users can identify which version is considered stable.
+- Users get to know which version you used to produce specific results.
+- Users can report problems related to a specific software version.
 
 ## Release Basics
 
-- A __release__ is a specific working version of your software which you used, e.g., to produce specific research results.
-- A __release number__ uniquely identifies a specific released software version.
-- There are different release number schemes; examples:
+- A **release** is a specific, stable version of your software used for producing research results.
+- A **release number** uniquely identifies each released version.
+- Common release numbering schemes:
   - [Semantic Versioning](https://semver.org) (e.g., `1.0.1`)
-  - [Calendar Versioning](https://calver.org) (e.g., `2021-04-22`).
-- A [__release tag__](https://git-scm.com/book/en/v2/Git-Basics-Tagging) is used to mark a specific released software version in the repository.
-It should be named in accordance to the release number to ensure that it can be easily found if needed.
-- A [__changelog__](https://keepachangelog.com/en/1.1.0/) documents all released versions of the software, including major changes of these versions.
-It is written from the user's point of view.
-Consider to [(semi-)automate updating the changelog](https://dev.to/devsatasurion/automate-changelogs-to-ease-your-release-282).
-- A __release package__ can be used by a user to directly install and use a released software version.
-  - It contains the software (e.g., source code, compiled executable), including proper user documentation (e.g., install and usage instructions, license information, citation information).
-  - In the simplest form, it might be a snapshot of your source code repository packaged as ZIP file.
-  Details depend on your programming language and target audience.
-  - For a standalone software tool, you would consider publishing it on a code distribution platform, such as [PyPi](https://pypi.org), [CRAN](https://cran.r-project.org), or [MVN](https://mvnrepository.com).
-  On this basis, users can easily install and use it via their typically used package manager.
+  - [Calendar Versioning](https://calver.org) (e.g., `2021-04-22`)
+- A [**release tag**](https://git-scm.com/book/en/v2/Git-Basics-Tagging) is a marker in the repository corresponding to the release number, making it easy to find the specific version.
+- A [**changelog**](https://keepachangelog.com/en/1.1.0/) documents all released versions and their major changes from the user’s perspective.
+Consider [semi-automating the updating of the changelog]((https://dev.to/devsatasurion/automate-changelogs-to-ease-your-release-282)).
+- A **release package** includes the software (raw source code and/or compiled executable) and proper documentation, such as installation instructions, usage instructions, license information, and citation information.
+This can be a ZIP file or published on platforms like [PyPi](https://pypi.org), [CRAN](https://cran.r-project.org), or [MVN](https://mvnrepository.com) for easier user access.
 
 ## Minimal Release Checklist for Research Code
 
-1. Before you start, make sure that you defined:
+### 1. Before You Start
 
-   - Tthe release number scheme.
-   - The name mapping between release number and release tags.
-   - How to handle citation metadata.
-   - Where you want to archive the code.
-   - The format and content of the release packages.
+- Define the release number scheme.
+- Establish the name mapping between release numbers and release tags.
+- Determine how to handle citation metadata.
+- Decide where to archive the code.
+- Define the format and content of release packages.
 
-2. Prepare code for release
+### 2. Prepare Code for Release
 
-   - Define the release number for the release.
-   - Document the user-visible changes in the changelog.
-   - Update the citation metadata for this release.
+- Define the release number for the release.
+- Document user-visible changes in the changelog.
+- Update the citation metadata for this release.
 
-3. Check the code
+### 3. Check the Code
 
-   - Make sure that the code fulfills its intended functionality in the environments for which the code should work.
-   - It is recommended to automate some checks by using automated tests and linting.
-   - Review the documentation.
+- Ensure the code fulfills its intended functionality in the target environments.
+- Automate checks using tests and linting to catch bugs early.
+- Review the documentation.
 
-4. Publish and archive the release
+### 4. Publish and Archive the Release
 
-   - Mark the release in the source code repository using a tag.
-   This step ensures that one can easily identify the content of the released version in the source code repository.
-   - Create the release package and eventually publish it on a code distribution platform.
-   - Archive the release package.
+- Mark the release in the source code repository with a tag to identify the released version.
+- Create and publish the release package, potentially on a code distribution platform.
+- Archive the release package, e.g., on Zenodo, to receive a persistent identifier.
