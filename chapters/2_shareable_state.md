@@ -2,50 +2,50 @@
 
 ## TL;DR
 
-- Make sure others can install and (re-)use the software.
-- Strive for comprehensible code.
-- Do not share internals (sensitive information, absolute paths, local dependencies).
+- Ensure others can install and (re-)use your software.
+- Strive for comprehensible and clean code.
+- Avoid sharing sensitive information, absolute paths, and local dependencies.
 
 ## Why is This Process Important?
 
-- Others need to understand and reuse the artifacts.
-- Mitigate security problems by removing sensitive information, e.g., API keys.
+- Others need to understand and reuse your artifacts.
+- Removing sensitive information mitigates security risks, such as exposed API keys.
 
 ## General Hints
 
-- Organize repository content with folders.
-- Clearly state dependencies.
+- **Organize Repository Content**: Use folders to structure your repository logically.
+- **State Dependencies Clearly**:
   - For Python:
-    - Basic: Python version + `requirements.txt`
-    - Advanced:
-      - `requirements.in` file and `pip-compile` command
-      - Python setuptools
-      - Make file
-      - Dev-based requirements (e.g., for testing) in a `requirements-extra.in` file
-      - Check a [tutorial](https://medium.com/packagr/using-pip-compile-to-manage-dependencies-in-your-python-packages-8451b21a949e) on Medium.
-  - Avoid dependencies with private resources (e.g., databases, libraries, servers).
-- Convert absolute to relative paths.
-- Remove / mask sensitive data, like passwords, API key, user accounts, internal IP addresses, etc.
-- Add a shell script that helps users to automatically set up and start the project.
-- Test the correctness and completeness of the installation process on a "clean machine".
+    - **Basic**: Specify the Python version and include a `requirements.txt` file.
+    - **Advanced**:
+      - Use a `requirements.in` file and the `pip-compile` command.
+      - Utilize Python setuptools.
+      - Create a Makefile.
+      - Include development dependencies (e.g., for testing) in a `requirements-extra.in` file.
+      - Refer to [this tutorial](https://medium.com/packagr/using-pip-compile-to-manage-dependencies-in-your-python-packages-8451b21a949e) for more details.
+  - **Avoid Private Resources**: Do not rely on private databases, libraries, or servers.
+- **Convert Absolute Paths to Relative Paths**: Ensure paths are relative to the project directory.
+- **Remove or Mask Sensitive Data**: Exclude passwords, API keys, user accounts, internal IP addresses, etc.
+- **Provide Setup Scripts**: Include a shell script to help users set up and start the project automatically.
+- **Test Installation on a Clean Machine**: Verify the installation process on a system that mimics a new user environment.
 
 ## Improve the Code Style
 
-- Check the guidelines of the programming language's or framework's user community.
-- Read similar code of others to receive inspiration.
-- Apply a standardized code style and use code linters and formatters within an IDE to apply the style consistently.
-- Use code sanitizers to remove problematic code or configurations from the project.
-- Use descriptive names for files, functions, etc.
-- Use logical blocks to structure your code, e.g., functions.
-- Add code comments to describe important aspects, such as the "bigger picture", or usage examples.
-- Do not "over-comment" the code, especially with inline comments, as this can also hinder the readability.
-- Apply pair-programming and code reviews (or least [rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging)).
+- **Follow Community Guidelines**: Adhere to the coding standards of the language or framework you are using.
+- **Learn from Others**: Read similar code from other projects for inspiration.
+- **Use Standardized Code Style**: Apply consistent coding conventions with the help of linters and formatters in your IDE.
+- **Use Code Sanitizers**: Remove problematic code or configurations.
+- **Descriptive Naming**: Name files, functions, and variables descriptively.
+- **Logical Code Structure**: Organize your code into logical blocks, such as functions and modules.
+- **Comment Wisely**: Add comments to explain important aspects and provide usage examples, but avoid excessive inline comments that can hinder readability.
+- **Collaborate**: Engage in pair programming and code reviews.
+If that's not possible, use techniques like [rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
 
 ## Add Test Cases
 
-- Automated tests work as an executable documentation for developers that want to reuse your code.
-- Add small tests as early as possible, as a good starting point for an automated test pipeline.
+- **Automated Tests**: These serve as executable documentation, helping developers understand how to use your code.
+- **Start Small**: Add basic tests early, laying the foundation for an automated test pipeline.
 
-## Further Reads
+## Further Reading
 
-- [Guideline](https://www.bitecode.dev/p/relieving-your-python-packaging-pain) by Bite Code! how to avoid problems with Python package managers
+- [Relieving Your Python Packaging Pain](https://www.bitecode.dev/p/relieving-your-python-packaging-pain) by Bite Code!: A guide to avoid problems with Python package managers.
