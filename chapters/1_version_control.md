@@ -18,7 +18,7 @@ There may be specific obligations or restrictions.
 
 ## Where to Store the Code?
 
-- Minimum: Local Git versioning system.
+- Minimum: Local Git versioning system
 - Recommended: Backup on a collaboration platform such as:
   - GitHub
   - GitLab
@@ -33,14 +33,14 @@ There may be specific obligations or restrictions.
   - Test cases
   - (Example) input data
   - `.gitignore` file
-    - To exclude unnecessary files and directories from version control and public sharing.
+    - To exclude unnecessary files and directories from version control and public sharing
     - Use the [gitignore generator](https://www.toptal.com/developers/gitignore) by Toptal for a good starting configuration.
 
 ## What Should Not be Part of the Public Repository?
 
-- Sensitive files and data, e.g., API keys or login information.
-- Generated files, such as third-party libraries automatically downloaded during installation (e.g., `node_modules` in Node projects) or binary files generated during compilation.
-- Large, static artifacts that could be published separately, such as datasets.
+- Sensitive files and data, e.g., API keys or login information
+- Generated files, such as third-party libraries automatically downloaded during installation (e.g., `node_modules` in Node projects) or binary files generated during compilation
+- Large, static artifacts that could be published separately, such as datasets
 
 ## What To Do With Large Data?
 
@@ -64,4 +64,4 @@ There may be specific obligations or restrictions.
 ## Further Reading
 
 - [Version Control with Git tutorial](https://swcarpentry.github.io/git-novice/) by Software Carpentry
-- [re3data](http://re3data.org/) to browse public research data repositories.
+- [re3data](http://re3data.org/) to browse public research data repositories
