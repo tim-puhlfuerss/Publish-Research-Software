@@ -2,67 +2,64 @@
 
 ## TL;DR
 
-- Cite all relevant software packages as good as possible in your academic work.
+- Open source code != citable code.
+- Cite all relevant software packages accurately in your academic work.
 - Make your artifact citable by adding citation metadata and archiving your artifact.
-- Encourage citation of your software.
-- Citable code != open source code
+- Encourage the citation of your software.
 
 ## Why is This Process Important?
 
-- Software is a research product, just like a paper.
-- Creating and maintaining research software is academic work, and should allow for academic credit and careers.
-- Citing software enables reproducibility of research results and the assessment of the software.
+- Software is a research product, like a paper.
+- Creating and maintaining research software is academic work deserving credit.
+- Citable software enhances research reproducibility and software assessment.
 
 ## How to Cite Software?
 
 - Cite all software packages (including your own) in the reference list of your academic work.
-- Ideally try to cite:
-  - The software itself.
-  - The exact version of the software.
+- Ideally, cite:
   - The software using its unique identifier.
+  - The exact version of the software.
   - The source code.
   - The software's authors.
   - The software's release date.
 
 ## Authorship and Contributorship in Software
 
-When determining the authors, please consider the following recommendations:
+When determining authors, consider the following:
 
 - There are no universally accepted guidelines for software authorship.
-- Different roles than programmers might be considered as authors.
-For example, testers, reviewers, technical writers, maintainers, release engineers, software architects, UX designers, etc. may all qualify for authorship.
-- Decisions about authorship are project-specific, but must follow good scientific practice.
-Refer to the [ICMJE Uniform Requirements](https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html) for papers, and translate the best practice to software, e.g.,
-  - There may be no honorary authorship.
-  - The contribution to the software must be substantial.
-  - Final approval of the outcome may be covered by a CLA.
-  - Agreement to be accountable for (at least own) changes may be factored into the decision.
-- Contributors should be acknowledged, but are not always software authors, e.g., issue reporters, typo fixers, evangelists promoting the software, and managers/PIs with no substantial contribution to the software itself.
-- Consider using automation to keep track of contributors, for example, with the help of the [All Contributors bot](https://allcontributors.org/).
+- Roles beyond programmers might qualify as authors (e.g., UX designers, testers, reviewers, technical writers).
+- Decisions about authorship are project-specific but must follow good scientific practice.
+Refer to the [ICMJE Uniform Requirements](https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html) for papers, translating best practices to software:
+  - Contributions must be substantial.
+  There may be no honorary authorship.
+  - Final approval of the outcome might be covered by a CLA.
+  - An agreement to be accountable for (at least own) changes may be factored into the decision.
+- Contributors should be acknowledged, but are not always authors (e.g., issue reporters, typo fixers, evangelists promoting the software).
+- Consider using automation to track contributors, e.g., with the [All Contributors bot](https://allcontributors.org/).
 
 ## How to Make Your Software Citable?
 
 - Provide citation metadata.
 - Archive the software and obtain a persistent identifier (PID), e.g., a Document Object Identifier (DOI) via Zenodo.
-- Provide a prominent citation hint as part of your documentation.
+- Include a prominent citation hint in your documentation.
 
 ### Provide Citation Metadata
 
-- You can directly manage citation metadata as part of your source code repository by providing one of the following options:
+- Manage citation metadata directly in your repository by providing:
   - A [CITATION.cff](https://citation-file-format.github.io) file (human/machine-readable citation metadata).
   Use the [cffinit](https://citation-file-format.github.io/cff-initializer-javascript/#/) tool to create or update this file.
-  - A [codemeta.json](https://codemeta.github.io) file (machine-readable information about your software including citation metadata).
+  - A [codemeta.json](https://codemeta.github.io) file (machine-readable information including citation metadata).
   Use the [CodeMeta Generator](https://codemeta.github.io/codemeta-generator/) to create this file.
-- Another option is to let digital object repositories such as [Zenodo](https://zenodo.org) manage your citation metadata.
-Zenodo can also manage multiple software versions and provides one DOI per version.
-- You can also combine the approaches.
+- Alternatively, use digital object repositories like [Zenodo](https://zenodo.org) to manage your citation metadata.
+Zenodo supports multiple software versions and provides one DOI per version.
+- Combining both approaches is also an option.
 
 ### Archive the Software
 
-- Archiving software in a publication repository is crucial to ensure long-term availability.
-- Such a publication repository allows you to deposit your software and to obtain a PID (e.g., a DOI).
-- The PID is a persistent reference to the software in a research publication.
-In comparison, usual source code repository URLs break easily or the software may become unavailable at all.
+- Archiving software in a publication repository ensures long-term availability.
+- A publication repository provides a PID (e.g., DOI) for persistent reference in research publications.
+Normal repository URLs might break or become unavailable.
 - Example publication repositories:
   - Zenodo
   - [Figshare](https://figshare.com)
@@ -70,14 +67,11 @@ In comparison, usual source code repository URLs break easily or the software ma
 
 ## Software Journals
 
-- If your organization only "awards" peer-reviewed publications, software journals might be an option.
-- See the [overview of software journals](https://www.software.ac.uk/which-journals-should-i-publish-my-software) by the _Software Sustainable Institute_.
-- Recommendation: [Journal of Open Source Software (JOSS)](https://joss.theoj.org/)
-  - Focus on research software tools
-  - Developer-friendly
-  - Ensures that the software itself is citable
+- If your organization only values peer-reviewed publications, consider software journals.
+- See the [overview of software journals](https://www.software.ac.uk/which-journals-should-i-publish-my-software) by the Software Sustainability Institute.
+- Recommended: [Journal of Open Source Software (JOSS)](https://joss.theoj.org/), which focuses on research software tools, is developer-friendly, and ensures software is citable.
 
-## Further Reads
+## Further Reading
 
-- Extensive guideline about [research software citations](https://cite.research-software.org)
+- Extensive guidelines on [research software citations](https://cite.research-software.org)
 - [Guidelines for archiving and referencing software artifacts](https://www.softwareheritage.org/save-and-reference-research-software/) by Software Heritage
